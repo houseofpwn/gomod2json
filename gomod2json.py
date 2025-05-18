@@ -89,8 +89,8 @@ def main():
         print("Module Name:", module_info['module_name'])
         #print("Go Version:", module_info['go_version'])
         #print("Dependencies:")
-        for name, version in module_info['dependencies'].items():
-            print(f"  {name}: {version}")
+        #for name, version in module_info['dependencies'].items():
+        #    print(f"  {name}: {version}")
 
 
 
