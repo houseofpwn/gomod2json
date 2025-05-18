@@ -66,7 +66,7 @@ def read_go_mod(file_path):
 def main():
     file_path = sys.argv[1]
     module_info = read_go_mod(file_path)
-    depfilename = "deps.json"
+    depfilename = sys.argv[2]
     depdict = {}
 
     try:
