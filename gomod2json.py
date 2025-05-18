@@ -86,7 +86,7 @@ def main():
             depfile.close()
 
 
-        print("Module Name:", module_info['module_name'])
+        print("Processing module:", module_info['module_name'])
         #print("Go Version:", module_info['go_version'])
         #print("Dependencies:")
         #for name, version in module_info['dependencies'].items():
