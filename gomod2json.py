@@ -82,7 +82,7 @@ def main():
     if module_info:
         depdict[module_info['module_name']] = module_info['dependencies']
         with open(depfilename, 'w+') as depfile:
-            json.dump(depdict, depfile)
+            json.dump(depdict, depfile, indent=4)
             depfile.close()
 
 
