@@ -1,7 +1,7 @@
 import json
 import re
 import sys
-
+from colorama import Fore, Back, Style
 
 def read_go_mod(file_path):
     """
@@ -86,7 +86,7 @@ def main():
             depfile.close()
 
 
-        print("Processing module:", module_info['module_name'])
+        print("Processing module:", Fore.GREEN + module_info['module_name'])
         #print("Go Version:", module_info['go_version'])
         #print("Dependencies:")
         #for name, version in module_info['dependencies'].items():
