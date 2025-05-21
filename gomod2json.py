@@ -4,15 +4,7 @@ import sys
 from colorama import Fore, Back, Style
 
 def read_go_mod(file_path):
-    """
-    Reads a go.mod file and extracts module information.
 
-    Args:
-        file_path (str): The path to the go.mod file.
-
-    Returns:
-        dict: A dictionary containing module information, or None if an error occurs.
-    """
     try:
         with open(file_path, 'r') as file:
             content = file.read()
