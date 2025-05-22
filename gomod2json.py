@@ -3,6 +3,7 @@ import re
 import sys
 from colorama import Fore
 
+
 # This script takes in a go.mod file, parses it and
 # stores writes it to a json file.
 
@@ -76,6 +77,7 @@ def main():
             depfile.close()
 
         print(Fore.WHITE + "Processing module:", Fore.GREEN + module_info['module_name'])
+
 
 if __name__ == "__main__":
     main()
